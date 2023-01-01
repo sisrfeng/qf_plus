@@ -6,13 +6,23 @@ The goal of nvim-bqf is to make Neovim's quickfix window better.
 
 ---
 
-In today's era of floating windows, are you afraid to toggle quickfix window to make your eyes
-uncomfortable? Are you constantly jumping between the edit window and the quickfix window when you
-use quickfix window to refactor because of lacking a sustainable preview window? Do you think
-quickfix window lacks a fuzzy search function? At present, nvim-bqf can solve the above problems.
+In today's era of floating windows,
+are you afraid to toggle quickfix window to make your eyes uncomfortable?
+Are you constantly jumping between
+the edit window and
+the quickfix window when you use quickfix window to refactor because
+of lacking a sustainable preview window?
 
-You really don't need any search replace plugins, because nvim-bqf with the built-in function of the
-quickfix window allows you to easily search and replace targets.
+Do you think quickfix window lacks a fuzzy search function?
+At present,
+nvim-bqf can solve the above problems.
+
+
+You really don't need any search replace plugins,
+because
+nvim-bqf with the built-in function of the quickfix window allows you to easily search and
+replace targets.
+
 
 So why not nvim-bqf?
 
@@ -73,13 +83,6 @@ So why not nvim-bqf?
 - [fzf](https://github.com/junegunn/fzf) (optional, 0.25.0 later)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (optional)
 
-### Installation
-
-Install with [Packer.nvim](https://github.com/wbthomason/packer.nvim):
-
-```lua
-use {'kevinhwang91/nvim-bqf'}
-```
 
 ### Minimal configuration
 
@@ -96,9 +99,11 @@ end
 use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 ```
 
-The nvim-bqf's preview builds upon the buffers. I highly recommended to use
+The nvim-bqf's preview builds upon the buffers.
+I highly recommended to use
 [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) to do syntax for the buffer,
-because vim's syntax is very lagging and is extremely bad for the user experience in large files.
+because vim's syntax is very lagging and
+is extremely bad for the user experience in large files.
 
 > nvim-bqf has optimized the preview performance for treesitter
 
@@ -107,6 +112,7 @@ because vim's syntax is very lagging and is extremely bad for the user experienc
 1. If you are familiar with quickfix, use quickfix as usual.
 2. If you don't know quickfix well, you can run `:vimgrep /\w\+/j % | copen` under a buffer inside
    nvim to get started quickly.
+
 3. If you want to taste quickfix like demo, check out
    [Integrate with other plugins](#integrate-with-other-plugins), and pick up the configuration you
    like.
