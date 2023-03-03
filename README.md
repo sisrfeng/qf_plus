@@ -86,6 +86,7 @@ So why not nvim-bqf?
 
 ### Minimal configuration
 
+放packer里?
 ```lua
 use {'kevinhwang91/nvim-bqf', ft = 'qf'}
 
@@ -261,8 +262,7 @@ Using external grep-like program to search `display` and replace it to `show`, b
 }
 ```
 
-Before loading any modules, `:lua =require('bqf.config')` will show you everything
-about current configuration.
+Before loading any modules, `:lua =require('bqf.config')` will show you everything  about current configuration.
 
 ### Function table
 
@@ -326,10 +326,12 @@ detail.
 
 #### Why use an additional context?
 
-nvim-bqf will use the context to implement missing features of quickfix. To get better highlighting
-experience, nvim-bqf processeds the vim regrex pattern and
-[lsp range](https://microsoft.github.io/language-server-protocol/specification#range) from the
-context additionally.
+nvim-bqf will use the context to implement missing features of quickfix.
+To get better highlighting experience,
+nvim-bqf processeds the vim regrex pattern and
+[lsp range](https://microsoft.github.io/language-server-protocol/specification#range)
+from the context additionally.
+
 
 The context's format that can be processed by nvim-bqf is:
 
@@ -337,8 +339,9 @@ The context's format that can be processed by nvim-bqf is:
 local context = {context = {bqf = {}}}
 ```
 
-nvim-bqf only occupies a key of `context`, which makes nvim-bqf get along well with other plugins in
-context of the quickfix window.
+nvim-bqf only occupies a key of `context`,
+which makes nvim-bqf get along well with other plugins in context of the quickfix window.
+
 
 #### Supported keys
 
@@ -418,12 +421,12 @@ nvim-bqf actually works with context in
 ### Highlight groups
 
 ```vim
-hi default link BqfPreviewFloat Normal
-hi default link BqfPreviewBorder Normal
-hi default link BqfPreviewCursor Cursor
-hi default link BqfPreviewRange IncSearch
-hi default link BqfPreviewCountLabel BqfPreviewRange
-hi default BqfSign ctermfg=14 guifg=Cyan
+hi  default  link     BqfPreviewFloat       Normal
+hi  default  link     BqfPreviewBorder      Normal
+hi  default  link     BqfPreviewCursor      Cursor
+hi  default  link     BqfPreviewRange       IncSearch
+hi  default  link     BqfPreviewCountLabel  BqfPreviewRange
+hi  default  BqfSign  ctermfg=14            guifg=Cyan
 ```
 
 - `BqfPreviewFloat`: highlight floating window

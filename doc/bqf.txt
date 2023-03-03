@@ -1,6 +1,4 @@
 *bqf.txt*
-*nvimbqf.txt*
-*nvim-bqf.txt*
 
 `URL`: https://github.com/kevinhwang91/nvim-bqf
 
@@ -10,6 +8,7 @@
 
 `PATH`: ../lua/bqf/config.lua
 
-press `gf` or `CTRL-W gf` under the PATH value :)
+press `gf` or `ctrl-w gf` under the PATH value :)
 
-vim:ft=help
+DIY_again
+DIY_2  vim:ft=help:
